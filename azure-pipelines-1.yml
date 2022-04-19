@@ -12,9 +12,9 @@ pool:
 variables:
 - group: group-002
 - name: var-001
-  value: $[variables.backend-api-secret] # uses runtime expression
+  value: $[variables.backendApiSecret] # uses runtime expression
 
 steps:
 - script: echo Hello, world!
-- script: echo $(backend-api-secret) # uses macro syntax
+- script: echo $(backendApiSecret) # uses macro syntax
 - script: echo $(var-001) 
